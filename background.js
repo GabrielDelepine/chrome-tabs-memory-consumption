@@ -147,7 +147,7 @@ function getMemory() {
 let lastIcon;
 function setIcon(icon) {
     if (icon !== lastIcon) {
-        chrome.browserAction.setIcon({ path: icon });
+        chrome.browserAction.setIcon({ path: 'icons/' + icon });
         lastIcon = icon;
     }
 }
